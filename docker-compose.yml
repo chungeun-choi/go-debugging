@@ -1,0 +1,11 @@
+services:
+  debug:
+    container_name: build
+    build: .
+    image: hot-reloading-app
+    ports:
+      - "2345:2345"
+      - "2024:2024"
+    volumes:
+      - ./:/app
+
