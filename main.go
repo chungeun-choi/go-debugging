@@ -27,10 +27,10 @@ func debugHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	_, err = w.Write([]byte(fmt.Sprintf("input number: %v", number)))
+	_, err = w.Write([]byte(fmt.Sprintf("input number test: %v", number)))
 	if err != nil {
 		log.Printf("failed to return")
-		log.Println("추가")
+
 		return
 	}
 }
